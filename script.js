@@ -12,15 +12,23 @@ let subheading = document.querySelector(".subheading");
 // console.log(paragraph1);
 // console.log(footerText);
 // console.log(subheading);
-
-
 // console.log(document.querySelector(".mainSection").firstChild);
-
 
 mainHeading.textContent = "Noget andet!";
 
-let firstArticle = document.querySelector("article:first-child");
-let secondArticle = document.querySelector("article:last-child");
+let firstArticleP = document.querySelector("article:first-child p");
+let secondArticleP = document.querySelector("article:last-child p");
+firstArticleP.textContent = "Hej med dig, jeg hedder Kaj!";
+secondArticleP.textContent = "Save your prayers little one!"
 
-firstArticle.textContent = "Hej med dig, jeg hedder Kaj!";
-secondArticle.textContent = "Save your prayers little one!"
+console.log(firstArticleP)
+// console.log(firstArticle)
+
+let firstArticleImg = document.querySelector("article:first-child img");
+let secondArticleImg = document.querySelector("article:last-child img");
+
+firstArticleImg.src = "https://picsum.photos/300";
+secondArticleImg.src = "https://picsum.photos/300";
+
+firstArticleImg.alt = "Noget tekst om billedet";
+secondArticleImg.alt = "Noget andet tekst om et andet billede";
