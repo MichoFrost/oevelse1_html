@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Øvelse 1 - HTML5 struktur</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,30 +15,35 @@
   </header>
 
   <main>
-    <h2>Undertitel</h2>
-    <section>
-      <article>
-        <h3>Article 1</h3>
-        <img src="https://picsum.photos/200" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolore? Sequi, rerum dignissimos vel
-          obcaecati soluta veritatis quam, possimus, ab quasi minima ut. Dolores molestias quam soluta quae.
-          Exercitationem, voluptate.</p>
-      </article>
-      <article>
-        <h3>Article 1</h3>
-        <img src="https://picsum.photos/200" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolore? Sequi, rerum dignissimos vel
-          obcaecati soluta veritatis quam, possimus, ab quasi minima ut. Dolores molestias quam soluta quae.
-          Exercitationem, voluptate.</p>
-      </article>
+    <section class="mainSection">
+      <h2 class="subheading">Undertitel</h2>
+      <div class="articles">
+        <article class="article1">
+          <img class="image1" src="https://picsum.photos/200" alt="">
+          <h3>Article 1</h3>
+          <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolore? Sequi, rerum
+            dignissimos vel
+            obcaecati soluta veritatis quam, possimus, ab quasi minima ut. Dolores molestias quam soluta quae.
+            Exercitationem, voluptate.</p>
+        </article>
+        <article>
+          <img src="https://picsum.photos/200" alt="">
+          <h3>Article 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolore? Sequi, rerum dignissimos vel
+            obcaecati soluta veritatis quam, possimus, ab quasi minima ut. Dolores molestias quam soluta quae.
+            Exercitationem, voluptate.</p>
+        </article>
+      </div>
 
     </section>
 
   </main>
 
-  <footer>This is the Footer</footer>
+  <footer>
+    <h5 class="footerText">This is the Footer</h5>
+  </footer>
 
-
+  <script src="script.js"></script>
 </body>
 
 </html>
