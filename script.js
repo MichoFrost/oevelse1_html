@@ -1,5 +1,6 @@
 
 let article1 = document.querySelector(".article1");
+let articles = document.querySelector(".articles");
 let image1 = document.querySelector(".image1");
 let paragraph1 = document.querySelector(".paragraph1");
 let footerText = document.querySelector(".footerText");
@@ -32,3 +33,18 @@ secondArticleImg.src = "https://picsum.photos/300";
 
 firstArticleImg.alt = "Noget tekst om billedet";
 secondArticleImg.alt = "Noget andet tekst om et andet billede";
+
+
+let newArticle = document.createElement("article");
+let newImg = document.createElement("img");
+newImg.src = "https://picsum.photos/500";
+let newArticleHeading = document.createElement("h2");
+newArticleHeading.textContent = "NY OVERSKRIFT!"
+let newParagraph = document.createElement("p");
+newParagraph.textContent = "NOGET NYT TEKST!";
+newArticle.appendChild(newImg);
+newArticle.appendChild(newArticleHeading);
+newArticle.appendChild(newParagraph);
+newArticle.appendChild(newParagraph);
+
+articles.appendChild(newArticle);
